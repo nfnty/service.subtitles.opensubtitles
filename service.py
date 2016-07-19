@@ -85,7 +85,7 @@ def Download(id,url,format,stack=False):
       log( __name__, "failed to connect to service for subtitle download")
       return subtitle_list
   if not result:
-    log( __name__,"Download Using HTTP")
+    log( __name__,"Download Using HTTPS")
     zip = os.path.join( __temp__, "OpenSubtitles.zip")
     f = urllib.urlopen(url)
     with open(zip, "wb") as subFile:
